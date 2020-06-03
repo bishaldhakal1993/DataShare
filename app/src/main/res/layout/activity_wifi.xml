@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wifiStateText"
+        android:layout_marginTop="25dp"
+        android:textSize="10pt"
+        android:text="Wi-Fi is currently switched off"
+        tools:ignore="MissingConstraints" />
+    <Switch
+        android:layout_below="@id/wifiStateText"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toggle Wi-Fi"
+        android:id="@+id/switchWifi"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:layout_below="@id/switchWifi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:id="@+id/reconnectWifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reconnect Wifi"
+        android:onClick="reconnectWifi"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:layout_below="@id/reconnectWifi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:id="@+id/showOtherNetworks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Other Networks"
+        android:onClick="showOtherNetworks"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:layout_below="@id/showOtherNetworks"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:id="@+id/showWifiDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Wi-Fi Details"
+        android:onClick="showWifiDetails"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:layout_below="@id/showWifiDetails"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtWifiDetails"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        tools:ignore="MissingConstraints" />
+
+</RelativeLayout>

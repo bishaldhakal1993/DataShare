@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/welcomeTitle"
+        android:layout_marginTop="25dp"
+        android:textSize="50dp"
+        android:text="Data Share"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:layout_below="@id/welcomeTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:id="@+id/shareWifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share Hotspot Wifi"
+        android:onClick="shareWifi"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:layout_below="@id/shareWifi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:id="@+id/connectWifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect Wifi"
+        android:onClick="connectWifi"
+        tools:ignore="MissingConstraints" />
+
+</RelativeLayout>
